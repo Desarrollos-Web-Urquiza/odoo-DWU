@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Vista formulario -->
+    <record id="view_hola_odoo_form" model="ir.ui.view">
+        <field name="name">hola.odoo.form</field>
+        <field name="model">hola.odoo</field>
+        <field name="arch" type="xml">
+            <form string="Hola Odoo">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista lista -->
+    <record id="view_hola_odoo_tree" model="ir.ui.view">
+        <field name="name">hola.odoo.tree</field>
+        <field name="model">hola.odoo</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción -->
+    <record id="action_hola_odoo" model="ir.actions.act_window">
+        <field name="name">Hola Odoo</field>
+        <field name="res_model">hola.odoo</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menú -->
+    <menuitem id="menu_hola_odoo_root" name="Hola Odoo"/>
+    <menuitem
+        id="menu_hola_odoo"
+        name="Mensajes"
+        parent="menu_hola_odoo_root"
+        action="action_hola_odoo"
+    />
+
+</odoo>
