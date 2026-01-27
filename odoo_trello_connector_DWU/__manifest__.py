@@ -22,7 +22,7 @@
 {
     'name': "Odoo Trello Connector - DWU",
     'version': '1.0.0',
-    'category': 'Project',
+    'category': 'Project DWU',
     'summary': """Integrate Projects and Tasks between Trello and Odoo""",
     'description': """Personalización del conector de Trello by DWU""",
     'author': 'DWU',
@@ -34,6 +34,7 @@
         'views/res_users_views.xml',
         'views/project_project_views.xml',
         'views/project_task_views.xml',
+        'views/trello_menu.xml',
     ],
     'images': ['static/description/banner.jpg'],
     'license': 'AGPL-3',
